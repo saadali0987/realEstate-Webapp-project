@@ -1,0 +1,13 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+input, select{
+    width: 100px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid rgb(208, 207, 207);
+}
