@@ -31,7 +31,7 @@ const Home = () => {
 
 
 
-        <div className='flex-[2] bg-teal-300 relative flex hidden lg:block'>
+        <div className='flex-[2] bg-black relative flex hidden lg:block'>
             <img className='w-[115%] absolute right-[150px] h-[70%] items-center' src={banner} alt="background" />
         </div>
     </div>
