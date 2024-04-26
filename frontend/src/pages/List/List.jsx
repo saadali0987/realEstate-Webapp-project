@@ -7,8 +7,8 @@ const List = () => {
     const data = listData
   return (
     <div className='flex h-full'>
-        <div className='flex-[3]'>
-            <div className='pr-[50px]'>
+        <div className='flex-[3] h-full'>
+            <div className='pr-[50px] flex flex-col gap-[50px] overflow-y-scroll h-full pb-[50px]'>
                 <Filter />
                 {data.map(item=><Card key={item.id} item={item} />)}
             </div>

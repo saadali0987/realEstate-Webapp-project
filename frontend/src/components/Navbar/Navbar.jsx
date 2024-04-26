@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from "../../assets/logoo.png"
 import menu from "../../assets/menu.png"
+import { BsHouseCheck } from "react-icons/bs";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -8,7 +9,8 @@ const Navbar = () => {
     <nav className='flex justify-between h-[100px] items-center'>
         <div className='flex flex-[3]  gap-[50px] items-center'>
             <a href="/" className='hover:scale-[1.05] ease-in duration-100 flex items-center font-bold  text-[20px] gap-[10px]'>
-                <img className='w-[28px]' src={logo} alt="logo" />
+                {/* <img className='w-[28px]' src={logo} alt="logo" /> */}
+                <BsHouseCheck className='w-8 h-8' />
                 <span className='md:hidden lg:inline'>PrimePropertyPortal</span>
             </a>
             <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Home</a>

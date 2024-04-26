@@ -1,0 +1,12 @@
+.icon{
+    width: 18px;
+    height: 18px;
+}
+
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: whitesmoke;
+}
