@@ -6,10 +6,10 @@ import pin from "../../assets/pin.png"
 const SinglePage = () => {
   return (
     <div className='flex h-full'>
-      <div className='flex-[3]'>
+      <div className='flex-[3] overflow-y-scroll pb-4 '>
         <div className='pr-[50px]'>
           <Slider images={singlePostData.images} />
-          <div className='info'>
+          <div className='info mt-4'>
             <div className='_top flex justify-between'>
               <div className='_post flex flex-col gap-[20px]'>
                 <h1 className='text-[28px]'>{singlePostData.title}</h1>
