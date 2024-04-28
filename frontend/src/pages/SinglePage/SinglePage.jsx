@@ -15,6 +15,9 @@ import bath from "../../assets/bath.png"
 import school from "../../assets/school.png"
 import bus from "../../assets/bus.png"
 import restaurant from "../../assets/restaurant.png"
+import { FaHeartCirclePlus } from "react-icons/fa6";
+import { CiHeart } from "react-icons/ci";
+import { MdOutlineMessage } from "react-icons/md"
 
 
 const SinglePage = () => {
@@ -65,8 +68,8 @@ const SinglePage = () => {
             <div className='_feature'>
               <img src={utility} alt="" />
               <div className='featureText'>
-                <span>Property Fees</span>
-                <p>Must have 3x the rent in total household income</p>
+                <span>Furniture</span>
+                <p>Furnished</p>
               </div>
             </div>
           </div>
@@ -114,13 +117,11 @@ const SinglePage = () => {
             <Map items={[singlePostData]} />
           </div>
           <div className='buttons flex justify-between mt-6'>
-            <button className='_button'>
-              <img  src={chat} alt="" />
-              <span>Send a message</span>
+            <button className='_button '>
+              <MdOutlineMessage className='w-10 h-10' />
             </button>
             <button className='_button'>
-              <img src={save} alt="" />
-              <span>Save to favorites</span>
+              <CiHeart className='w-10 h-10' />
             </button>
           </div>
         </div>

@@ -1,0 +1,22 @@
+
+._title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+._button{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+._info span{
+    display: flex;
+    align-items: center ;
+    gap: 20px;
+}

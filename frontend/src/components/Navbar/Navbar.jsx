@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import logo from "../../assets/logoo.png"
 import menu from "../../assets/menu.png"
 import { BsHouseCheck } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
+    const user = true
   return (
     <nav className='flex justify-between h-[100px] items-center'>
         <div className='flex flex-[3]  gap-[50px] items-center'>
@@ -21,8 +23,18 @@ const Navbar = () => {
 
 
         <div className='flex-[2]  flex items-center justify-end h-full lg:bg-black'>
-            <a className=' hidden md:inline hover:scale-[1.05] ease-in duration-100 py-[12px] px-[24px] m-[20px] bg-black rounded-md text-white' href="">Sign Up</a>
-            <a className=' hidden md:inline py-[12px] px-[24px] m-[20px] rounded-md bg-black text-white  hover:scale-[1.05] ease-in duration-100 ' href="">Sign In</a>
+            {user ? <div className='user text-white flex items-center font-bold justify-between mr-8  gap-6 '>
+                <img className='w-[40px] h-[40px] rounded-full object-cover mr-[5px] border-2 border-white' src="https://b.fssta.com/uploads/application/soccer/headshots/885.vresize.350.350.medium.14.png" alt="" />
+                <span>Saad Ali</span>
+                <Link to="/profile" className='relative'>
+                    <div className='notification absolute bg-green-300 p-2 rounded-full text-black w-4 h-4 top-[-8px] right-[-8px] text-xs flex justify-center items-center'>3</div>
+                    <span>Profile</span>
+                </Link>
+
+
+            </div> : 
+            (<><a className=' hidden md:inline hover:scale-[1.05] ease-in duration-100 py-[12px] px-[24px] m-[20px] bg-black rounded-md text-white' href="">Sign Up</a>
+            <a className=' hidden md:inline py-[12px] px-[24px] m-[20px] rounded-md bg-black text-white  hover:scale-[1.05] ease-in duration-100 ' href="">Sign In</a> </>) }
             <div>
                 <img className={`md:hidden w-[36px] h-[36px] sticky cursor-pointer z-[99]`} onClick={()=>setShowMenu(prev=>!prev)} src={menu} alt="menu" />
             </div>

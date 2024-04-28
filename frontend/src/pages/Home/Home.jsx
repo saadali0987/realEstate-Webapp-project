@@ -8,8 +8,8 @@ const Home = () => {
     <div className='flex h-full'>
         <div className='flex-[3]'>
             <div className='p-0 lg:pr-[100px] flex flex-col  mt-12 md:mt-0 justify-start md:justify-center gap-[50px] h-full'>
-                <h1 className=' text-6xl'>Find And Sell Real Estate. Your Dream awaits...</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur accusamus! Reprehenderit neque laudantium blanditiis tenetur quae ipsam iusto esse excepturi eligendi accusamus repellat nesciunt dignissimos adipisci expedita cumque provident tempora, odio laborum quisquam. Aperiam quasi itaque doloribus accusamus deleniti vero at exercitationem quo. Ab incidunt nemo atque. Doloribus, commodi.</p>
+                <h1 className=' text-6xl'>Discover Your Dream Home. Buy or Sell Real Estate Today</h1>
+                <p>Welcome to your gateway to the perfect property. Whether you're searching for your dream home or ready to make a lucrative sale, our platform streamlines the process, connecting you with the opportunities you've been dreaming of. Dive in and let's turn your real estate aspirations into reality!</p>
                 <Searchbar />
 
                 <div className='justify-between hidden md:flex'>
