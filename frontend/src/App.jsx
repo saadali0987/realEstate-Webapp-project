@@ -9,6 +9,7 @@ import {
 import List from './pages/List/List';
 import Layout from './pages/Layout/Layout';
 import Login from './pages/Login/Login';
+import Profile from './pages/Profile/Profile';
 
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
         {
           path:"/login",
           element:<Login />
+        },
+        {
+          path:"/profile",
+          element:<Profile />
         }
       ]
     },

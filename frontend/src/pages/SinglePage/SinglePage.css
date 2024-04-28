@@ -1,0 +1,71 @@
+.features img{
+    width: 14px;
+    height: 14px;
+}
+
+.title{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.listVertical{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-size: 13px;
+    gap: 20px;
+    
+}
+
+._feature{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featureText span{
+    font-weight: bold;
+}
+
+.featureText p{
+    font-size: 10px;
+}
+
+
+.listHorizontal{
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-size: 13px; 
+}
+
+
+.sizeContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+._button{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 5px ;
+}

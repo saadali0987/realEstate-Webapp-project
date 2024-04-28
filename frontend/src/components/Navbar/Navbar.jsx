@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
         <div className='flex-[2]  flex items-center justify-end h-full lg:bg-black'>
-            <a className=' hidden md:inline hover:scale-[1.05] ease-in duration-100 py-[12px] px-[24px] m-[20px] text-white' href="">Sign Up</a>
+            <a className=' hidden md:inline hover:scale-[1.05] ease-in duration-100 py-[12px] px-[24px] m-[20px] bg-black rounded-md text-white' href="">Sign Up</a>
             <a className=' hidden md:inline py-[12px] px-[24px] m-[20px] rounded-md bg-black text-white  hover:scale-[1.05] ease-in duration-100 ' href="">Sign In</a>
             <div>
                 <img className={`md:hidden w-[36px] h-[36px] sticky cursor-pointer z-[99]`} onClick={()=>setShowMenu(prev=>!prev)} src={menu} alt="menu" />
