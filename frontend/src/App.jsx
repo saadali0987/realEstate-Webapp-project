@@ -7,9 +7,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import List from './pages/List/List';
-import Layout from './pages/Layout/Layout';
+import {Layout, AuthLayout} from './pages/Layout/Layout';
 import Login from './pages/Login/Login';
 import Profile from './pages/Profile/Profile';
+import Register from './pages/Register/Register';
+import ProfileUpdate from './pages/ProfileUpdate/ProfileUpdate';
 
 
 function App() {
@@ -36,11 +38,25 @@ function App() {
           element:<Login />
         },
         {
-          path:"/profile",
-          element:<Profile />
-        }
+          path:"/register",
+          element:<Register />
+        },
       ]
     },
+    {
+      path:"/",
+      element:<AuthLayout />,
+      children:[
+        {
+          path:"/profile",
+          element:<Profile />
+        },
+        {
+          path:"/profile/update",
+          element:<ProfileUpdate />
+        }
+      ]
+    }
   ]);
   
 

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import bg from "../../assets/bg.png"
 import banner from "../../assets/banner.png"
 import Searchbar from '../../components/Searchbar/Searchbar'
+import { authContext } from '../../context/authContext.jsx'
 
 const Home = () => {
+    const {currentUser} = useContext(authContext)
+    console.log(currentUser)
   return (
     <div className='flex h-full'>
         <div className='flex-[3]'>
