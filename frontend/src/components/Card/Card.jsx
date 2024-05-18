@@ -9,10 +9,11 @@ import "./Card.css"
 
 
 const Card = ({item}) => {
+  console.log(item)
   return (
     <div className='flex gap-[20px]'>
       <Link className='flex-[2] h-[200px]' to={`/${item.id}`}>
-        <img src={item.img} alt="" className='h-full w-full object-cover rounded-md' />
+        <img src={item.images[0]?.url} alt="" className='h-full w-full object-cover rounded-md' />
       </Link>
       <div className='flex-[3] flex flex-col justify-between gap-[10px]'>
         <h2 className=' text-xl  opacity-70 hover:opacity-100   hover:scale-[1.01] ease-linear duration-100'>

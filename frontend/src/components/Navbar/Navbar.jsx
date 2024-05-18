@@ -72,12 +72,12 @@ const Navbar = () => {
             <a href="/" className='hover:scale-[1.05] ease-in duration-100 flex items-center font-bold  text-[20px] gap-[10px]'>
                 {/* <img className='w-[28px]' src={logo} alt="logo" /> */}
                 <BsHouseCheck className='w-8 h-8' />
-                <span className='md:hidden lg:inline'>PrimePropertyPortal</span>
+                <span className='md:hidden lg:inline text-[24px]'>PrimePropertyPortal</span>
             </a>
-            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Home</a>
-            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">About</a>
-            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Contact</a>
-            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Agents</a>
+            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Saad</a>
+            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Usman</a>
+            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Fahad</a>
+            <a className='hover:scale-[1.05] hidden md:inline ease-in duration-100' href="">Hanzala</a>
         </div>
 
 

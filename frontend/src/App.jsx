@@ -12,6 +12,8 @@ import Login from './pages/Login/Login';
 import Profile from './pages/Profile/Profile';
 import Register from './pages/Register/Register';
 import ProfileUpdate from './pages/ProfileUpdate/ProfileUpdate';
+import NewPost from './pages/NewPost/NewPost';
+import { listPageLoader, profilePageLoader, singlePageLoader } from './lib/loaders.js';
 
 
 function App() {
@@ -27,11 +29,13 @@ function App() {
         },
         {
           path:"/list",
-          element:<List />
+          element:<List />,
+          loader: listPageLoader
         },
         {
           path:"/:id",
-          element:<SinglePage />
+          element:<SinglePage />,
+          loader:singlePageLoader
         },
         {
           path:"/login",
@@ -49,11 +53,16 @@ function App() {
       children:[
         {
           path:"/profile",
-          element:<Profile />
+          element:<Profile />,
+          loader: profilePageLoader
         },
         {
           path:"/profile/update",
           element:<ProfileUpdate />
+        },
+        {
+          path:"/add",
+          element:<NewPost />
         }
       ]
     }

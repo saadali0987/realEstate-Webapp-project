@@ -6,7 +6,6 @@ import { authContext } from '../../context/authContext.jsx'
 
 const Home = () => {
     const {currentUser} = useContext(authContext)
-    console.log(currentUser)
   return (
     <div className='flex h-full'>
         <div className='flex-[3]'>

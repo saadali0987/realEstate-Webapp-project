@@ -10,7 +10,7 @@ import noavatar from "../../assets/noavatar.jpg"
 function ProfileUpdate() {
   const { currentUser, updateUser } = useContext(authContext);
   const [error, setError] = useState("");
-  const [avatar, setAvatar] = useState(currentUser.avatar);
+  const [avatar, setAvatar] = useState([]);
 
   const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ function ProfileUpdate() {
         username,
         email,
         password,
-        avatar
+        avatar: avatar[0]
       }, {withCredentials:true});
       updateUser(res.data);
       navigate("/profile");
@@ -67,7 +67,7 @@ function ProfileUpdate() {
         </form>
       </div>
       <div className="sideContainer">
-        <img src={ avatar || noavatar} alt="" className="avatar" />
+        <img src={ avatar[0] || currentUser.avatar || noavatar} alt="" className="avatar" />
         <UploadWidget
           uwConfig={{
             cloudName: "drncrfu2r",
@@ -76,7 +76,7 @@ function ProfileUpdate() {
             maxImageFileSize: 2000000,
             folder: "avatars",
           }}
-          setAvatar={setAvatar}
+          setState={setAvatar}
         />
       </div>
     </div>
